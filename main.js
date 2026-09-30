@@ -2,7 +2,7 @@
   const $ = (s, r = document) => r.querySelector(s);
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Navbar compacts on scroll
+  // Navbar compacts on scoll
   const nav = $('#nav');
   const onScroll = () => nav.classList.toggle('scrolled', scrollY > 24);
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
